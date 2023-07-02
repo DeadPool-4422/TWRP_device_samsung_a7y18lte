@@ -75,31 +75,12 @@ subsystem sound
 /sys/devices/system/cpu/cpu*   cpufreq/scaling_min_freq   0664  system system
 */
 
-# additional permission for android_usb
-/sys/class/android_usb/android0/enable 0664 root system
-
 # Mobicore
 /dev/mobicore             0700   system     system
 /dev/mobicore-user        0666   radio     system
 
 # Secure MEM driver
 /dev/s5p-smem             0660   system     system
-
-# USB gadgets
-/dev/android_adb          0660   shell    shell
-/dev/usb-ffs/adb          0660   shell    shell
-
-# ADB daemon
-/dev/usb-ffs/adb          0660   shell    shell
-
-# Android USB
-/sys/devices/virtual/android_usb/android0/idVendor     0664   root    root
-/sys/devices/virtual/android_usb/android0/idProduct    0664   root    root
-/sys/devices/virtual/android_usb/android0/iManufacturer 0664   root    root
-/sys/devices/virtual/android_usb/android0/iProduct     0664   root    root
-/sys/devices/virtual/android_usb/android0/iSerial      0664   root    root
-/sys/devices/virtual/android_usb/android0/f_ffs/aliases adb    0664   root    root
-
 
 /*
 # USB 
