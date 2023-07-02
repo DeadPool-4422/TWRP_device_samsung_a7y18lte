@@ -75,6 +75,9 @@ subsystem sound
 /sys/devices/system/cpu/cpu*   cpufreq/scaling_min_freq   0664  system system
 */
 
+# additional permission for android_usb
+/sys/class/android_usb/android0/enable 0664 root system
+
 # Mobicore
 /dev/mobicore             0700   system     system
 /dev/mobicore-user        0666   radio     system
